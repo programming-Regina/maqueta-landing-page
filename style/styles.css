@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* ********** CUSTOM PROPERTIES ********** */
+:root {
+  --first-color: #770301;
+  --first-alpha-color: rgba(119, 3, 1, 0.75);
+  --second-color: #02416A;
+  --second-alpha-color: rgba(2, 65, 106, 0.75);
+  --third-color: #EC936C;
+  --third-alpha-color: rgba(236, 147, 108, 0.75);
+  --white-color: #FFF;
+  --gray-light-color: rgb(190, 186, 186);
+  --gray-color: #5d5f5c;
+  --gray-dark-color: #666;
+  --black-color: #0D0C0D;
+  --link-color: #94d4ff;
+  --title-color: #fff;
+  --text-color: #F0CB8B;
+  --white-alpha-color: rgba(255, 255, 255, 0.5);
+  --black-alpha-color: rgba(13, 12, 13, 0.5);
+  --font: 'Lato', sans-serif;
+  --max-width: 1200px;
+  --header-height: 4rem;
+}
+
+/* ********** RESET ********** */
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+  font-family: var(--font);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  transition: all 0.5s ease-out;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* ********** HEADER ********** */
+.cover-img {
+  height: 100vh;
+  background-image: url('../img/cover.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  z-index: 1;
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-end;
+}
+
+#top {
+  padding-top: 3.5rem;
+}
+
+.motif {
+  font-weight: bold;
+}
+
+.sign-box {
+  align-self: flex-end;
+  text-align: right;
+  padding-right: 1rem;
+  margin-bottom: 4.5rem;
+  color: var(--white-color);
+}
+
+.slogan {
+  font-style: italic;
+}
+
+/* ********** ABOUT US ********** */
+#about-us,
+#contact {
+  background-color: var(--first-color);
+}
+
+/* ********** SERVICES ********** */
+.card {
+  background-color: var(--gray-dark-color);
+}
+
+.card-footer>small {
+  color: var(--white-alpha-color);
+}
+
+#services {
+  background-color: var(--second-color);
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
+/* ********** OUR WORK ********** */
+#top,
+#our-work {
+  background-color: var(--third-color);
+  color: var(--white-color);
+}
+
+/* ********** CONTACT ********** */
+
+
+
+/* ********** GENERAL ********** */
+.bold {
+  font-weight: bold;
+  margin-top: .5rem;
+}
+
+footer {
+  background-color: var(--gray-dark-color);
+  color: var(--black-color);
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer-block {
+  padding-bottom: 1rem;
+}
+
+.footer-contact-data,
+.footer-sections {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-copy {
+  background-color: var(--second-alpha-color);
+  color: var(--white-color);
+}
+
+.navbar-text {
+  display: none;
+}
+
+section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: justify;
+  min-height: 100%;
+}
+
+section>p {
+  padding-left: .75rem;
+  padding-right: .75rem;
+  padding-top: .5rem;
+}
+
+.social-media {
+  font-size: 2rem;
+  text-align: center;
+  width: 100vw;
+}
+
+.social-media>i {
+  padding: 1rem .5rem 1rem .5rem;
+}
+
+.title {
+  text-align: center;
+  padding-top: .8rem;
+}
+
+@media screen and (min-width: 600px) {
+  .footer-block {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-copy {
+    width: 100vw;
+    text-align: center;
+  }
+
+  .navbar-text {
+    display: inline-block;
+  }
+
+  .sign-box {
+    margin-bottom: 7.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 95%;
+  }
+
+  footer {
+    font-size: small;
+    text-align: right;
+    padding-right: 4rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    position: fixed;
+    margin-bottom: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  .row1>.input-group {
+    width: 48%;
+  }
+
+  .row1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  section {
+    height: 40rem;
+    padding-top: 3rem;
+  }
+
+  .title,
+  .motif,
+  .slogan {
+    text-align: right;
+    padding-right: 4rem;
+  }
+}
+
+/* 
+Tolerable Color Scheme
+
+Name: Smoky Black
+Hex: #0D0C0D
+RGB: (13, 12, 13)
+CMYK: 0, 0.076, 0, 0.949
+ 
+Name: Barn Red
+Hex: #770301
+RGB: (119, 3, 1)
+CMYK: 0, 0.974, 0.991, 0.533
+ 
+Name: Middle Red
+Hex: #EC936C
+RGB: (236, 147, 108)
+CMYK: 0, 0.377, 0.542, 0.074
+ 
+Name: Crayola's Gold
+Hex: #F0CB8B
+RGB: (240, 203, 139)
+CMYK: 0, 0.154, 0.420, 0.058
+ 	
+Name: Ateneo Blue
+Hex: #02416A
+RGB: (2, 65, 106)
+CMYK: 0.981, 0.386, 0, 0.584
+*/
