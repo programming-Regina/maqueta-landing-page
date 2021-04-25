@@ -104,9 +104,6 @@ p {
   display: flex;
   align-content: flex-end;
   justify-content: flex-end;
-}
-
-#top {
   padding-top: 3.5rem;
 }
 
@@ -118,7 +115,7 @@ p {
   align-self: flex-end;
   text-align: right;
   padding-right: 1rem;
-  margin-bottom: 4.5rem;
+  padding-bottom: 4.5rem;
   color: var(--white-color);
 }
 
@@ -192,7 +189,7 @@ footer {
 }
 
 section {
-  padding-top: 2rem;
+  padding-top: 3 rem;
   padding-bottom: 2rem;
   text-align: justify;
   min-height: 100%;
