@@ -250,7 +250,7 @@ section>p {
     padding-right: 4rem;
     padding-top: .25rem;
     padding-bottom: .25rem;
-    position: fixed;
+    /* position: fixed; */
     margin-bottom: 0px;
     bottom: 0px;
     left: 0px;
