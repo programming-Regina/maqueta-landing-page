@@ -1,2 +1,2 @@
 # maqueta-landing-page
-Maqueta landing page genérica
+Maqueta landing page genérica. Responsive design.
