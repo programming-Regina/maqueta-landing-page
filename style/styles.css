@@ -116,7 +116,6 @@ p {
   align-self: flex-end;
   text-align: right;
   padding-right: 1rem;
- 
   color: var(--white-color);
 }
 
@@ -128,6 +127,13 @@ p {
 #about-us,
 #contact {
   background-color: var(--first-color);
+}
+
+.video-clip {
+  display: flex;
+  justify-content: center;
+  max-width: 90vw;
+  margin: auto;
 }
 
 /* ********** SERVICES ********** */
@@ -146,6 +152,30 @@ p {
 }
 
 /* ********** OUR WORK ********** */
+
+.img-dee {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.img-dee2 {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.img-dee,
+.img-dee2 {
+  min-height: inherit;
+  background-image: url('../img/work1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--third-color);
+  width: 49%;
+}
+
 #top,
 #our-work {
   background-color: var(--third-color);
@@ -154,7 +184,13 @@ p {
 
 /* ********** CONTACT ********** */
 
-
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-around;
+  min-height: 100vh;
+}
 
 /* ********** GENERAL ********** */
 .bold {
@@ -196,6 +232,7 @@ section {
   min-height: 100%;
 }
 
+.our-work-container,
 section>p {
   padding-left: .75rem;
   padding-right: .75rem;
@@ -231,6 +268,20 @@ section>p {
     width: 100vw;
     text-align: center;
   }
+
+  .img-dee,
+  .our-work-text {
+    width: 49%;
+  }
+
+  .our-work-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .video-clip {
+    max-height: 70%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -244,15 +295,16 @@ section>p {
     padding-right: 4rem;
     padding-top: .25rem;
     padding-bottom: .25rem;
-    /* position: fixed; */
     margin-bottom: 0px;
     bottom: 0px;
     left: 0px;
     right: 0px;
   }
+
   .navbar-text {
     display: inline-block;
   }
+
   .row1>.input-group {
     width: 48%;
   }
